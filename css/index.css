@@ -14,9 +14,9 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	border: 0;
 	}
 /* remember to define focus styles! */
-*{
+/* *{
     border: 1px solid black;
-}
+} */
 :focus {
 	outline: 0;
 	}
@@ -79,7 +79,62 @@ nav {
     
 }
 
+/*Styles for the main*/
+.main{
+    background-image: url(https://images.unsplash.com/photo-1570441262582-a2d4b9a916a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    height: 500px;
+    margin-left:1%;
+    margin-top: 2%;
+}
 
+h1{
+    font-size: 4rem;
+    /* color:#94884f; */
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+.main p{
+    font-size: 2rem;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+/* Styles for info section */
+.info{
+    background-image: url(https://previews.123rf.com/images/anastasia6699/anastasia66991803/anastasia6699180300055/97178868-seamless-repeat-pattern-with-trailer-with-food-bus-on-white-background-vector-illustration-modern-an.jpg);
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    font-size: 2rem;
+    margin-top: 5%;
+
+}
+.info h2{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-weight: 800;
+}
+/* Styles for gallery */
+.gallery{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2%;
+    
+}
+.gallery h2{
+    margin-bottom: 3%;
+}
+.img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    height: auto;
+}
 
 
 
