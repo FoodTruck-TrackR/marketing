@@ -129,14 +129,22 @@ nav {
 .events-content { 
     display: flex;
     justify-content: space-around;
+    
+}
+
+.events-content-last { 
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 150px;
 }
 
 .card-container { 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 25%;
+    width: 27%;
     margin-top: 50px;
-    height:400px;
+    height:380px;
+    
 }
 .card-container:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -194,6 +202,24 @@ nav {
     color: black
 }
 
+.footer { 
+    height: 150px;
+    margin-top: -50px;
+    background-color: #FFDD33;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px  #000000;
+}
+
+.contact-icons { 
+    margin: 20px 0 20px 0;
+}
+
+
 
 /* Mobile Nav */ 
 
@@ -227,7 +253,7 @@ nav {
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
+        clip-path: circle(80px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 1.1s ease-out;
         pointer-events: none;
@@ -237,5 +263,21 @@ nav {
         clip-path: circle(1200px at 90% -10%);
         -webkit-clip-path: circle(1200px at 90% -10%);
         pointer-events: all;
+    }
+
+    .events-content { 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .events-content-last { 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .card-container { 
+        width: 90%;
     }
 }
