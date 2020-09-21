@@ -87,6 +87,10 @@ nav {
     color: black;
 }
 
+.nav-links a:hover { 
+    color:white;
+}
+
 #active-link { 
     color:white;
 }
