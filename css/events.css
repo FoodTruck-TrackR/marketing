@@ -113,6 +113,7 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 .banner-break { 
@@ -127,6 +128,7 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 
