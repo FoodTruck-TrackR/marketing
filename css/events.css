@@ -299,6 +299,10 @@ nav {
 }
 
 @media screen and (max-width: 500px) { 
+
+    .banner { 
+        margin-top:80px
+    }
     .events-content { 
         flex-direction: column;
         align-items: center;
