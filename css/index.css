@@ -49,7 +49,21 @@ blockquote, q {
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
     }
+    * { 
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
 
+    h1, h2 { 
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    h4 { 
+        font-weight: bold;
+        font-size:20px;
+    }
     
 
     nav { 
@@ -89,7 +103,6 @@ blockquote, q {
         filter:drop-shadow(5px 4px 5px black);
         
     }
-    
 
 /*Styles for the main*/
 .main{
@@ -103,17 +116,25 @@ blockquote, q {
     margin-left:1%;
     margin-top: 2%;
 }
+button{
+    width:10%;
+    height: 8%;
+    border-radius: 15%;
+    margin-top: 1%;
+    font-size: 1.5rem;
+}
 
 h1{
-    font-size: 4rem;
-    /* color:#94884f; */
+    font-size: 6rem;
     margin-top: 7%;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 .main p{
     font-size: 2rem;
     margin-top: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    color: white;
+        text-shadow: 2px 2px 5px black;
 }
 /* Styles for info section */
 .info{
@@ -123,12 +144,15 @@ h1{
     height: 300px;
     font-size: 2rem;
     margin-top: 5%;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 
 }
 .info h2{
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     font-weight: 800;
+    font-size: 4rem;
 }
 /* Styles for gallery */
 .gallery{
@@ -136,9 +160,11 @@ h1{
     font-size: 2rem;
     margin-top: 2%;
     
+    
 }
 .gallery h2{
     margin-bottom: 3%;
+    font-size: 2.5rem;
 }
 .pic img{
     flex-direction: row;
@@ -146,7 +172,22 @@ h1{
     width: 25%;
     height: 200px;
 }
+.footer { 
+    height: 150px;
+    margin-top: 1%;
+    background-color: #BCFB9D;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px  #000000;
+}
 
+.contact-icons { 
+    margin: 20px 0 20px 0;
+}
 
 
 .footer { 
@@ -173,8 +214,8 @@ h1{
 
 
 
-/* Mobile Nav */ 
 
+/* Mobile Nav */ 
 @media screen and (max-width: 768px) { 
 
     
