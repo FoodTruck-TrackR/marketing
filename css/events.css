@@ -227,7 +227,7 @@ nav {
 
 
 
-/* Mobile Nav */ 
+/* Tablet */ 
 
 @media screen and (max-width: 768px) { 
 
@@ -271,6 +271,23 @@ nav {
         pointer-events: all;
     }
 
+    .card-container { 
+        width: 30%;
+        height: 400px;
+    }
+
+    
+
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+}
+
+@media screen and (max-width: 500px) { 
     .events-content { 
         flex-direction: column;
         align-items: center;
@@ -283,14 +300,10 @@ nav {
         
     }
 
+
     .card-container { 
-        width: 90%;
+        width: 80%;
     }
-    
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      
+
 }
+
