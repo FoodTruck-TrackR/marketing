@@ -136,6 +136,10 @@ nav {
     
 }
 
+
+
+
+
 #biz-btn { 
     text-decoration: none;
     color:white;
@@ -156,6 +160,27 @@ nav {
 
 #biz-btn:hover { 
     background-color: #ffea80;
+}
+
+.center-content { 
+    height: 500px;
+    border:3px solid pink;
+    
+}
+.center-container { 
+    display: flex;
+    
+}
+
+.center-image { 
+    width: 50%; 
+    height:400px;
+    background: url("../img/center-image.jpg") no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 
