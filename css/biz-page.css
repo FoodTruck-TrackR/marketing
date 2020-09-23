@@ -53,6 +53,7 @@ blockquote, q {
     h2 { 
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
+        color: black;
 
         }
 
@@ -101,12 +102,14 @@ nav {
     
 }
 
-.top-container { 
+
+.top-container, .bottom-container { 
     display: flex;
     margin: 50px 0 50px 0;
+    
 }
 
-.top-text { 
+.top-text, .bottom-text { 
     width:50%;
     display: flex;
     flex-direction: column;
@@ -163,10 +166,9 @@ nav {
 }
 
 .center-content { 
-    height: 500px;
-    border:2px solid pink
-    
+    height: 500px; 
 }
+
 .center-container { 
     display: flex;
     
@@ -191,14 +193,42 @@ nav {
 
 .center-text h2 { 
     margin-bottom: 40px;
+    
 }
 
+.bottom-content { 
+    height:auto;
+}
+
+.bottom-text { 
+    align-self: center;
+    padding:30px;
+    
+}
+
+.bottom-text h2 { 
+    margin-bottom: 40px;
+}
+
+
+.bottom-image { 
+    width: 50%; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../img/bottom-page.jpg") no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
 
 
 
 .footer { 
     height: 150px;
-    margin-top: -50px;
+    margin-top: 50px;
     background-color: #BCFB9D;
     color:white;
     font-size:20px;
@@ -213,6 +243,9 @@ nav {
     margin: 20px 0 20px 0;
 }
 
+.bottom-image { 
+    height:600px;
+}
 
 
 /* Tablet */ 
@@ -272,32 +305,27 @@ nav {
         width: 100%;
     }
 
-    .center-content { 
-        margin-bottom:100px;
-    }
-
-    .center-container { 
-        flex-direction: column;
-        height:700px;
-    }
-
     .center-image { 
-        width: 100%;
+        width: 60%;
         margin-bottom: 20px;
+        
         
     }
 
     .center-text { 
         width: 100%;
-        margin:50px 0 50px 0;
-        height:300px;
         padding: 20px;
-        text-align:center;
+        align-self: center;
     }
 
     .center-text h2{ 
         margin-bottom: 10px;
     }
+
+    .bottom-image { 
+        height:450px;
+    }
+
 
 
     .sticky {
@@ -311,7 +339,26 @@ nav {
 /* Mobile */ 
 
 @media screen and (max-width: 500px) { 
-
     
+    .center-content, .bottom-content { 
+        height: auto;
+    }
+    
+    .center-container { 
+        flex-direction: column;
+    }
+
+    .center-image, .bottom-image { 
+        width:100%;
+    }
+
+    .bottom-container { 
+        flex-direction: column-reverse;
+    }
+
+    .bottom-text { 
+        width:100%;
+    }
+
 }
 
