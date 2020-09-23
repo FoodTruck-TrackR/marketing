@@ -1,0 +1,364 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    border: 0;
+    
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+    
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+    }
+    
+    * { 
+        box-sizing: border-box;
+    }
+
+    h2 { 
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: black;
+
+        }
+
+    h4 { 
+        font-weight: bold;
+        font-size:20px;
+    }
+
+    
+
+nav { 
+    height: 14vh; 
+    background-color: #BCFB9D;
+    width: 100%;
+    display: flex;
+}
+
+.nav-links { 
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    font-weight: bold;
+
+}
+
+.nav-links a { 
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover { 
+    color:white;
+}
+
+#active-link { 
+    color:white;
+}
+
+#home-icon { 
+    height:14vh;
+    filter:drop-shadow(5px 4px 5px black);
+    
+}
+
+
+.top-container, .bottom-container { 
+    display: flex;
+    margin: 50px 0 50px 0;
+    
+}
+
+.top-text, .bottom-text { 
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color:#666;
+    
+}
+
+.top-text h2 { 
+    margin: 100px 0 40px 0;
+    color:black;
+}
+
+.top-image { 
+    width: 50%; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../img/biz-banner.jpg") no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+
+    
+}
+
+
+
+
+
+#biz-btn { 
+    text-decoration: none;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    width: 220px;
+    height: 50px;
+    background-color: #FFDD33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    text-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+
+
+}
+
+#biz-btn:hover { 
+    background-color: #ffea80;
+}
+
+.center-content { 
+    height: 500px; 
+}
+
+.center-container { 
+    display: flex;
+    
+}
+
+.center-image { 
+    width: 50%; 
+    height:400px;
+    background: url("../img/center-image.jpg") no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.center-text { 
+    align-self: center;
+    width:50%;
+    padding:10px;
+}
+
+.center-text h2 { 
+    margin-bottom: 40px;
+    
+}
+
+.bottom-content { 
+    height:auto;
+}
+
+.bottom-text { 
+    align-self: center;
+    padding:30px;
+    
+}
+
+.bottom-text h2 { 
+    margin-bottom: 40px;
+}
+
+
+.bottom-image { 
+    width: 50%; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../img/bottom-page.jpg") no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+
+.footer { 
+    height: 150px;
+    margin-top: 50px;
+    background-color: #BCFB9D;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px  #000000;
+}
+
+.contact-icons { 
+    margin: 20px 0 20px 0;
+}
+
+.bottom-image { 
+    height:600px;
+}
+
+
+/* Tablet */ 
+
+@media screen and (max-width: 768px) { 
+
+    
+    .line { 
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+
+    }
+    
+    nav { 
+        position: relative;
+    }
+
+
+    .mobile-menu { 
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform:  translate(-5%, -50%);
+        z-index: 2;
+    }
+    
+    .nav-links { 
+        position: fixed;
+        background: #BCFB9D;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(80px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1.1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open { 
+        clip-path: circle(1200px at 90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .top-container { 
+        flex-direction: column;
+        height:400px;
+    }
+    .top-image { 
+        display:none;
+    }
+
+    .top-text { 
+        width: 100%;
+    }
+
+    .center-image { 
+        width: 60%;
+        margin-bottom: 20px;
+        
+        
+    }
+
+    .center-text { 
+        width: 100%;
+        padding: 20px;
+        align-self: center;
+    }
+
+    .center-text h2{ 
+        margin-bottom: 10px;
+    }
+
+    .bottom-image { 
+        height:450px;
+    }
+
+
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+}
+
+/* Mobile */ 
+
+@media screen and (max-width: 500px) { 
+    
+    .center-content, .bottom-content { 
+        height: auto;
+    }
+    
+    .center-container { 
+        flex-direction: column;
+    }
+
+    .center-image, .bottom-image { 
+        width:100%;
+    }
+
+    .bottom-container { 
+        flex-direction: column-reverse;
+    }
+
+    .bottom-text { 
+        width:100%;
+    }
+
+}
+
