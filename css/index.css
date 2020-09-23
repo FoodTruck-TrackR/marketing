@@ -134,7 +134,7 @@ h1{
     margin-top: 10%;
     margin-bottom: 1%;
     color: white;
-        text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px black;
 }
 /* Styles for info section */
 .info{
@@ -145,7 +145,7 @@ h1{
     font-size: 2rem;
     margin-top: 5%;
     color: white;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 0px 0px 3px black;
 
 }
 .info h2{
