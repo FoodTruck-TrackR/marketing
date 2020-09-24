@@ -162,3 +162,52 @@ h2{
 .contact-icons { 
     margin: 20px 0 20px 0;
 }
+/* Mobile Nav */ 
+@media screen and (max-width: 768px) { 
+
+    
+    .line { 
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+
+    }
+    
+    nav { 
+        position: relative;
+    }
+
+    .mobile-menu { 
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform:  translate(-5%, -50%);
+        z-index: 2;
+    }
+    
+    .nav-links { 
+        position: fixed;
+        background: #BCFB9D;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1.1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open { 
+        clip-path: circle(1200px at 90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+}
