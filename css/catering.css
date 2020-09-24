@@ -11,7 +11,8 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	border: 0;
+    border: 0;
+    
 	}
 /* remember to define focus styles! */
 :focus {
@@ -20,7 +21,10 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 body {
 	background: white;
 	line-height: 1;
-	color: black;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+    
 	}
 ol, ul {
 	list-style: none;
@@ -45,14 +49,12 @@ blockquote, q {
     * { 
         box-sizing: border-box;
     }
-
  
 /* Desktop */
 * { 
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-}
-nav { 
+}nav { 
     height: 14vh; 
     background-color: #BCFB9D;
     width: 100%;
@@ -80,13 +82,13 @@ nav {
     color:white;
 }
 
-.nav-links a { 
-    text-decoration: none;
-    color: black;
+#active-link { 
+    color:white;
 }
 
 #home-icon { 
-    height:12vh;
+    height:14vh;
+    filter:drop-shadow(5px 4px 5px black);
     
 }
 
@@ -110,7 +112,10 @@ body h1{
     text-shadow: 2px 2px 5px black;
 }
 
-
+.contact-us-form{
+    margin-top:5%;
+    text-align:center;
+}
 body{
     
     background:#FFDD33;
@@ -130,13 +135,16 @@ body{
 }
 
 .contact-icons { 
-    margin: 20px 0 0px 0;
+    margin: 20px 0 20px 0;
 }
 
+.bottom-image { 
+    height:600px;
+}
+/*Tablet*/
 
-/* Mobile Nav */ 
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 768px) { 
 
     
     .line { 
@@ -151,6 +159,7 @@ body{
         position: relative;
     }
 
+
     .mobile-menu { 
         position: absolute;
         cursor: pointer;
@@ -162,11 +171,11 @@ body{
     
     .nav-links { 
         position: fixed;
-        background: bisque;
+        background: #BCFB9D;
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
+        clip-path: circle(80px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 1.1s ease-out;
         pointer-events: none;
@@ -185,13 +194,14 @@ body{
         padding-top:25%;
         padding-bottom:25%;
     }
-    .card-container { 
-        width: 80%;
-    }
-    .footer p { 
-        margin-top:20px;
-        font-size: 13px;
-    }
+  
+
+
+/* Mobile */ 
+
+@media screen and (max-width: 500px) { 
+
+    
 
   
 }
