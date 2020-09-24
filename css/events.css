@@ -19,7 +19,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	}
 body {
-	background:#FFDD33;
+	background: white;
 	line-height: 1;
     color: black;
     
@@ -49,15 +49,14 @@ blockquote, q {
         font-family: 'Roboto', sans-serif;
     }
 
-    h1 { 
+    h2 { 
         font-family: 'Montserrat', sans-serif;
         font-size: 60px;
         color: white;
         text-shadow: 2px 2px 5px black;
     }
 
-    h2 { 
-        font-family: 'Montserrat', sans-serif;
+    h4 { 
         font-weight: bold;
         font-size:20px;
     }
@@ -66,7 +65,7 @@ blockquote, q {
 
 nav { 
     height: 14vh; 
-    background-color:#bcfb9d ;;
+    background-color: #BCFB9D;
     width: 100%;
     display: flex;
 }
@@ -99,57 +98,120 @@ nav {
 #home-icon { 
     height:14vh;
     filter:drop-shadow(5px 4px 5px black);
-}
-.title{
-    background-image: url(https://previews.123rf.com/images/vladwel/vladwel1707/vladwel170700025/81867077-winner-award-banner-vector-illustration-flat-cartoon-trophy-golden-cup-with-first-place-prize-and-li.jpg);
-    background-position: center;
-    height: 400px;
-    margin-top: 3%;
-}
-h1{
-    text-align: center;
-}
-.winner{
-    text-align: center;
-    margin-top: 5%;
-}
-h2{
-    font-size: 2rem;
-    width:50%;
-    margin-left: 25%;
-}
-.winner img{
-    margin-top: 3%;
-}
-.winner p{
-    margin-top: 2%;
-    font-size: 2rem;
-    font-weight: 600;
+    
 }
 
+.banner { 
+    width:100%; 
+    height:70vh;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background: url("../img/lemonade.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.banner-break { 
+    height:200px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../img/yellow-banner.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
 
 
+.events-content { 
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+.events-content-last { 
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 150px;
+}
+
+.card-container { 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 27%;
+    margin-top: 50px;
+    height:380px;
+    
+}
+.card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card-container img { 
+    height:200px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.card-text { 
+    padding: 10px;
+    line-height: 1.6;
+    margin-bottom:35px;
+}
+
+.button-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10px 10px 10px;
+}
+.button-container a { 
+    text-decoration: none;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    width: 49%;
+    margin: 0 10px 0 10px 0;
+    height: 30px;
+}
 
 
+#ticket-btn { 
+   background-color: #FFDD33;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
+#ticket-btn:hover { 
+    color: black
+}
 
+#event-btn { 
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
-
-
-
-
-
-
-
-
-
-
-
+ #event-btn:hover { 
+    background-color: white;
+    color: black
+}
 
 .footer { 
     height: 150px;
-    margin-top: 3%;
-    background-color:#bcfb9d;
+    margin-top: -50px;
+    background-color: #BCFB9D;
     color:white;
     font-size:20px;
     font-weight: bold;
@@ -162,7 +224,11 @@ h2{
 .contact-icons { 
     margin: 20px 0 20px 0;
 }
-/* Mobile Nav */ 
+
+
+
+/* Tablet */ 
+
 @media screen and (max-width: 768px) { 
 
     
@@ -177,6 +243,7 @@ h2{
     nav { 
         position: relative;
     }
+
 
     .mobile-menu { 
         position: absolute;
@@ -193,7 +260,7 @@ h2{
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
+        clip-path: circle(80px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 1.1s ease-out;
         pointer-events: none;
@@ -205,9 +272,48 @@ h2{
         pointer-events: all;
     }
 
+    
+
+    .card-container { 
+        width: 30%;
+       
+    }
+
+    h4 { 
+        font-size: 15px;
+    }
+
+    p { 
+        font-size: 13px;
+    }
+
+
     .sticky {
         position: fixed;
         top: 0;
         width: 100%;
       }
+      
 }
+
+/* Mobile */ 
+
+@media screen and (max-width: 500px) { 
+
+    .events-content { 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .events-content-last { 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card-container { 
+        width: 80%;
+    }
+
+}
+
